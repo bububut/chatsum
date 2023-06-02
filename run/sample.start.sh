@@ -1,5 +1,8 @@
 #!/bin/bash
 
+# set your Anthropic API key here
+export ANTHROPIC_API_KEY=""
+
 # clickhouse is used to store your chat history
 # choose a strong password to protect it
 export CLICKHOUSE_USER="myuser"
