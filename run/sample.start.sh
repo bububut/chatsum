@@ -27,7 +27,7 @@ mkdir -p clickhouse/data
 mkdir -p clickhouse/log
 mkdir -p clickhouse/users.d
 
-sudo docker run -d \
+sudo -E docker run -d \
     --name chatsum-clickhouse \
     --ulimit nofile=262144:262144 \
     -v $(pwd)/clickhouse/data:/var/lib/clickhouse/ \
@@ -39,7 +39,7 @@ sudo docker run -d \
     -e CLICKHOUSE_DEFAULT_ACCESS_MANAGEMENT=1 \
     clickhouse/clickhouse-server
 
-sudo docker run -d \
+sudo -E docker run -d \
     --name chatsum-wechaty \
     --rm \
     -e WECHATY_LOG="verbose" \
