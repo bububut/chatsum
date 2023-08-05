@@ -4,6 +4,7 @@ config = {
     'clickhouse_port': None,
     'clickhouse_user': None,
     'clickhouse_password': None,
+    'clickhouse_table': None,
 }
 
 def load_config():
@@ -11,3 +12,4 @@ def load_config():
     config['clickhouse_port'] = 19000
     config['clickhouse_user'] = os.environ['CLICKHOUSE_USER']
     config['clickhouse_password'] = os.environ['CLICKHOUSE_PASSWORD']
+    config['clickhouse_table'] = os.environ['CLICKHOUSE_TABLE']

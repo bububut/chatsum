@@ -7,6 +7,7 @@ export ANTHROPIC_API_KEY=""
 # choose a strong password to protect it
 export CLICKHOUSE_USER="myuser"
 export CLICKHOUSE_PASSWORD="mypassword"
+export CLICKHOUSE_TABLE="chat_history"
 
 # For personal wechat user, there're 2 options for WECHATY_PUPPET
 # "wechaty-puppet-wechat" uses web login, which is free but unstable and your
